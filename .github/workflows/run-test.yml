@@ -1,5 +1,4 @@
 name: run-test
-
 on:
   push:
     branches:
@@ -14,17 +13,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout and setup
-      - uses: actions/checkout@v3
+        uses: actions/checkout@v3
 
       - name: Setup Java
-        uses: actions/setup-java@v3
+        uses: actions/setup-Java@v3
         with:
-          java-version: 19
+          Java-version: '19'
           distribution: 'temurin'
-          cache: maven
+          cache: 'maven'
 
       - name: Build with Maven
-        run: mvn clean install
-
-      - name: Run tests Maven
-        run: mvn test
+        run: mvn package
