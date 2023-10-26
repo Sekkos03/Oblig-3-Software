@@ -1,4 +1,4 @@
-name: Java CI with Maven
+name: run-test
 
 on:
   push:
@@ -24,4 +24,7 @@ jobs:
           cache: maven
 
       - name: Build with Maven
-        run: mvn package
+        run: mvn clean install
+
+      - name: Run tests
+        run: mvn -B test --file pom.xml
