@@ -16,6 +16,7 @@ public class test_isLeapYear {
     }
     @Test
     public void test_isLeapYear_not_divisible_by4(){
+        assertFalse(LeapYear.isLeapYear(2016));
         assertFalse(LeapYear.isLeapYear(2019));
         assertFalse(LeapYear.isLeapYear(2022));
     }
