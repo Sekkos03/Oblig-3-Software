@@ -13,6 +13,7 @@ public class test_isLeapYear {
     public void test_isLeapYear_divisible_by400(){
         assertTrue(LeapYear.isLeapYear(2000));
         assertTrue(LeapYear.isLeapYear(2400));
+        assertTrue(LeapYear.isLeapYear(2800));
     }
     @Test
     public void test_isLeapYear_not_divisible_by4(){
