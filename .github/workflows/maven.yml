@@ -26,5 +26,6 @@ jobs:
       - name: Build with Maven
         run: mvn clean install
 
-      - name: Run tests
-        run: mvn -B test --file pom.xml
+      - name: Run Tests
+        run: mvn test
+        working-directory: ./Users/Sekou/OneDrive - Østfold University College/Dokumenter/Code/JavaProjects/Oblig2_Softwareeng_SekouKosiah
