@@ -1,4 +1,4 @@
-import hiof.sekouk.softogtest.oblig2.LeapYear;
+import hiof.sekouk.softogtest.oblig3.LeapYear;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertFalse;

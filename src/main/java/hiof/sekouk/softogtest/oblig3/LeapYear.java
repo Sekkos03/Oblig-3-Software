@@ -1,4 +1,4 @@
-package hiof.sekouk.softogtest.oblig2;
+package hiof.sekouk.softogtest.oblig3;
 
 public class LeapYear {
     public static boolean isLeapYear(int year) {
